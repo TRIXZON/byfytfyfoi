@@ -4,28 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>That Front I - Turn Your UI Ideas into Code</title>
+    <link rel="icon" type="image/png" sizes="64x64" href="logo.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
+        /* Global Styles */
         body {
             margin: 0;
             font-family: 'Inter', sans-serif;
             color: #f0f0f0;
             background-color: #000;
         }
+
+        /* Header Section */
         header {
             background: #121212;
             color: white;
             padding: 2rem 1rem;
             text-align: center;
         }
+
+        .logo {
+            width: 200px; /* Adjusted for larger size */
+            height: auto;
+            display: block;
+            margin: 0 auto 1rem; /* Centered with spacing */
+        }
+
         header h1 {
             font-size: 2.5rem;
             margin: 0;
         }
+
         header p {
             font-size: 1.2rem;
             margin: 1rem 0;
         }
+
         .cta-button {
             display: inline-block;
             background: #333;
@@ -37,50 +51,72 @@
             margin-top: 1rem;
             transition: background 0.3s;
         }
+
         .cta-button:hover {
             background: #555;
         }
+
+        /* Section Styles */
         section {
             padding: 2rem 1rem;
-            max-width: 800px;
+            max-width: 1200px; /* Wider layout for PC */
             margin: auto;
         }
+
         section h2 {
             text-align: center;
             font-size: 2rem;
             color: #f0f0f0;
         }
+
         .features {
             display: flex;
             flex-wrap: wrap;
             gap: 1rem;
             justify-content: center;
         }
+
         .feature {
             background: #1c1c1c;
             padding: 1rem;
             border-radius: 8px;
             text-align: center;
-            width: 200px;
+            width: 250px; /* Wider cards for PC */
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
         }
+
+        /* Footer Styles */
         footer {
             background: #121212;
             color: white;
             padding: 1rem 0;
             text-align: center;
         }
+
         footer a {
             color: #4A90E2;
             text-decoration: none;
         }
+
         footer a:hover {
             text-decoration: underline;
+        }
+
+        /* Responsive Design for Smaller Screens */
+        @media (max-width: 768px) {
+            .logo {
+                width: 150px; /* Smaller logo for smaller screens */
+            }
+
+            .feature {
+                width: 200px; /* Narrower cards for mobile */
+            }
         }
     </style>
 </head>
 <body>
     <header>
+        <img src="logo.jpg" alt="That Front I Logo" class="logo">
         <h1>Turn Your UI Ideas into Code</h1>
         <p>Upload a UI design, and we’ll generate production-ready code in seconds.</p>
         <a href="https://boihboidblkdgbkodblkggiogjjokioio.onrender.com" class="cta-button">Get Started for Free</a>
@@ -96,7 +132,7 @@
             </div>
             <div class="feature">
                 <h3>Seamless Deployment</h3>
-                <p>Deploy your app directly to production with ease. comming soon.</p>
+                <p>Deploy your app directly to production with ease. Coming soon.</p>
             </div>
             <div class="feature">
                 <h3>Affordable Pricing</h3>
@@ -104,7 +140,7 @@
             </div>
             <div class="feature">
                 <h3>Auction Your Apps</h3>
-                <p>Sell your apps through a unique auction system.COMMING SOON.</p>
+                <p>Sell your apps through a unique auction system. Coming soon.</p>
             </div>
         </div>
     </section>
